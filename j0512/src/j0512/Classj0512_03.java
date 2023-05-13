@@ -50,7 +50,7 @@ public class Classj0512_03 {
 		}
 		
 		//6.로또번호출력
-		System.out.print("로또번호 자동생성 : ");
+		System.out.println("로또번호 자동생성 : ");
 		for(int i=0;i<6;i++) {
 			System.out.print(lotto[i]+" ");
 		}

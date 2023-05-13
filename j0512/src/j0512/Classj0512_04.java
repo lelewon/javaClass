@@ -8,7 +8,7 @@ public class Classj0512_04 {
 		Scanner scan = new Scanner(System.in);
 		//변수선언
 		int temp = 0;   //임시저장변수
-		int random = 0; //랜던변수
+		int random = 0; //랜덤변수
 		int count = 0;  //당첨개수
 		
 		
@@ -51,21 +51,21 @@ public class Classj0512_04 {
 		// 6. 로또번호출력
 		System.out.println("6개 로또번호 : ");
 		for(int i=0;i<6;i++) {
-			System.out.println(lotto[i]+" ");
+			System.out.print(lotto[i]+" ");
 		}
 		System.out.println();
 		
 		// 7. 입력번호출력
 		System.out.println("6개 입력번호 : ");
 		for(int i=0;i<6;i++) {
-			System.out.println(myNum[i]+" ");
+			System.out.print(myNum[i]+" ");
 		}
 		System.out.println();
 		
 		// 8. 당첨번호출력
 		System.out.println("당첨번호 : ");
 		for(int i=0;i<count;i++) {
-			System.out.println(lottoNum[i]+" ");
+			System.out.print(lottoNum[i]+" ");
 		}
 		System.out.println();
 		

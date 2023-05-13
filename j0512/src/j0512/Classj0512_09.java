@@ -5,12 +5,12 @@ import java.util.Scanner;
 public class Classj0512_09 {
 
 	public static void main(String[] args) {
-		// 국어,영어,수학,합계
+		// 이름,국어,영어,수학,합계,평균
 		Scanner scan = new Scanner(System.in);
 		String[] title = {"이름","국어","영어","수학","합계","평균"};
 		String[] name = new String[5]; //이름
-		double[] avg = new double[5]; //평균
 		int[][] score = new int[5][4]; //5명의 국어,영어,수학,합계
+		double[] avg = new double[5]; //평균
 		//점수입력
 		for(int i=0;i<score.length;i++) {
 			System.out.println((i+1)+"번째 :");
