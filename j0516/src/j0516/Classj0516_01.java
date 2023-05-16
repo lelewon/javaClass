@@ -1,8 +1,8 @@
-package j0515;
+package j0516;
 
 import java.util.Scanner;
 
-public class Classj0515_09 {
+public class Classj0516_01 {
 
 	public static void main(String[] args) {
 		// 1. 성적입력
@@ -95,44 +95,18 @@ public class Classj0515_09 {
 						System.out.println("수정할 과목을 선택해주세요");
 						input = scan.nextInt();
 						chk=1; //찾는 학생이 있을 경우 1로 변경
-						switch(input) {
 						
-						case 1: case 2: case 3:
-							//score[i][0] 국어, score[i][1] 영어, score[i][2] 수학, score[i][3] 합계
-							System.out.println(title[input]+"점수 : "+score[i][input-1] );
-							System.out.println("-----------------------------------------");
-							System.out.println("변경할"+title[input]+"점수를 입력하세요");
-							score[i][0] = scan.nextInt(); //수정할 점수 입력
-							score[i][3] = score[i][0] + score[i][1] + score[i][2];
-							avg[i] = score[i][3]/3.0; //평균수정
-							System.out.println("[ 수정 완료!! ]");
-							System.out.println();
-							break;
+						//score[i][0] 국어, score[i][1] 영어, score[i][2] 수학, score[i][3] 합계
+						System.out.println(title[input]+"점수 : "+score[i][input-1] );
+						System.out.println("-----------------------------------------");
+						System.out.println("변경할"+title[input]+"점수를 입력하세요");
+						score[i][0] = scan.nextInt(); //수정할 점수 입력
+						score[i][3] = score[i][0] + score[i][1] + score[i][2];
+						avg[i] = score[i][3]/3.0; //평균수정
+						System.out.println("[ 수정 완료!! ]");
+						System.out.println();
+						break;
 							
-						case 2:
-							//score[i][0] 국어, score[i][1] 영어, score[i][2] 수학, score[i][3] 합계
-							System.out.println(title[input]+"점수 : "+score[i][input-1] );
-							System.out.println("-----------------------------------------");
-							System.out.println("변경할"+title[input]+"점수를 입력하세요");
-							score[i][1] = scan.nextInt(); //수정할 점수 입력
-							score[i][3] = score[i][0] + score[i][1] + score[i][2];
-							avg[i] = score[i][3]/3.0; //평균수정
-							System.out.println("[ 수정 완료!! ]");
-							System.out.println();
-							break;
-							
-						case 3:
-							//score[i][0] 국어, score[i][1] 영어, score[i][2] 수학, score[i][3] 합계
-							System.out.println(title[input]+"점수 : "+score[i][input-1] );
-							System.out.println("-----------------------------------------");
-							System.out.println("변경할"+title[input]+"점수를 입력하세요");
-							score[i][2] = scan.nextInt(); //수정할 점수 입력
-							score[i][3] = score[i][0] + score[i][1] + score[i][2];
-							avg[i] = score[i][3]/3.0; //평균수정
-							System.out.println("[ 수정 완료!! ]");
-							System.out.println();
-							break;
-						}//swith
 					}//if
 				}//for
 				
@@ -154,3 +128,4 @@ public class Classj0515_09 {
 	}//main
 
 }//class
+
