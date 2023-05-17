@@ -9,7 +9,7 @@ public class Classj0516_02_2 {
 
 	public static void main(String[] args) {
 		
-		//객체선언 Student s - new Student(); //title쓸려면 c.title[]라고 사용
+		//객체선언 Student s = new Student(); //title쓸려면 c.title[]라고 사용
 //		Classj0516_02_2 c = new Classj0516_02_2();
 		
 		// 1. 성적입력
