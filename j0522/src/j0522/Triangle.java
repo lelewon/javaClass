@@ -4,6 +4,8 @@ package j0522;
 public class Triangle extends Shape {
 	Point[] p; //인스턴스변수 - 객체선언후 참조변수명.변수명
 	
+	Triangle(){}
+	
 	Triangle(Point[] p){ //(1)생성자-클래스명 일치, void 없음
 		this.p = p;
 	}
