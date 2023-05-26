@@ -24,7 +24,7 @@ public class Classj0522_04 {
 			System.out.println("2번째 숫자를 입력하세요.");
 			num2 = scan.nextInt();
 			
-			d[i] = new Data(n1,n2);			
+			d[i] = new Data(num1,num2);			
 			
 			
 //			d[i] = new Data();

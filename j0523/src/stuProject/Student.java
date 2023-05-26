@@ -22,7 +22,7 @@ public class Student {
 	public Student(){ //생성자 - 클래스명과일치, void 없음
 		
 	} 
-	Student(String name,int kor,int eng,int math){ //생성자
+	public Student(String name,int kor,int eng,int math){ //생성자
 		this.name = name;
 		this.kor = kor;
 		this.eng = eng;
