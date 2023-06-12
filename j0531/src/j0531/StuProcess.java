@@ -165,6 +165,30 @@ public class StuProcess {
 	
 }
 
+			while(true) {
+				System.out.println("[ 학생성적처리 프로그램 ]");
+				System.out.println(stuCount+"번째 이름을 입력하세요(0.이전페이지로 이동)");
+				if(stuNo.equals("0")) {
+					System.out.println("[ 이전페이지로 이동합니다. ]");
+					break;
+				}
+				System.out.println("국어점수를 입력하세요");
+				kor.nextInt();
+				System.out.println("영어점수를 입력하세요");
+				eng.nextInt();
+				System.out.println("수학점수를 입력하세요");
+				math.nextInt();
+				
+			}
+			System.out.println();
+			Map<Student,Object> map = new HashMap<>();
+			map.put("list",list);
+			map.put("stuCount",stuCount);
+			
+			return map;
+
+
+
 //			System.out.println("학번을 입력하세요(0.이전페이지로 이동)");
 //			stuNo = scan.nextInt();
 //			if(stuNo==0) {
