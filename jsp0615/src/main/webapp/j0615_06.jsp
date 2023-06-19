@@ -8,15 +8,20 @@
 	</head>
 	<body>
 		<%
-			out.println("url : "+request.getRequestURL()+"<br>");
+			String uri = request.getRequestURI(); //uri String
+			int cPathLength = request.getContextPath().length()+1;
+			String fileName = uri.substring(cPathLength);
+			
 			out.println("uri : "+request.getRequestURI()+"<br>");
 			out.println("contextPath : "+request.getContextPath()+"<br>");
+			out.println("ip : "+request.getRemoteAddr()+"<br>");
+		
+			out.println("url : "+request.getRequestURL()+"<br>");
 			out.println("서버 : "+request.getServerName()+"<br>");
 			out.println("포트번호 : "+request.getServerPort()+"<br>");
 			out.println("요청방식 : "+request.getMethod()+"<br>");
 			out.println("프로토콜 : "+request.getProtocol()+"<br>");
-			out.println("ip : "+request.getRemoteAddr()+"<br>");
-			out.println("파일명 : "+substring(length.,9)+"<br>");
+			out.println("파일명 : "+fileName+"<br>");
 		%>
 		
 		<!-- 파일명을 출력하시오 -->
